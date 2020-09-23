@@ -1,0 +1,128 @@
+/*!
+ * Custom Bootstrap v4.5.0
+ */
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/jumbotron";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/media";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/toasts";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/spinners";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/print";
+
+
+/*!
+Spotlight Template
+Copyright 2020 Anthony Vick trading as Just A Guy Coding.
+Licensed under the Apache License, Version 2.0
+*/
+
+ /* The order of rules is based on appearence on the page, where possilbe.*/
+
+body{
+    font-family: "Raleway", san-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Oswald", serif;
+}
+
+.search {
+    background-color: transparent;
+}
+
+.search-text{
+    order: 2px solid #6c757d;
+    background-color: lightgray;
+    border-radius: 2px;
+}
+
+.spotlight-header {
+    line-height : 1;
+    font-family : "Oswald", serif;
+    font-size   : 3.25rem;
+}
+
+nav {
+    &.navbar {
+        padding: 1rem 0 1rem 0;
+    }
+    a.active {
+        font-weight: bold;
+    }
+}
+
+
+.feature-jumbotron {
+    background-size     : cover;
+    background-position : center;
+    margin-bottom       : 0;
+}
+
+.card {
+    border: 4px solid rgba(0, 0, 0, 0.125);
+}
+
+.spotlight-post {
+    margin-bottom: 4rem;
+}
+
+.spotlight-posttitle {
+    margin-bottom: .25rem;
+    font-size: 2.5rem;
+}
+
+.spotlight-postmeta {
+    margin-bottom: 1.25rem;
+    color: #999;
+}
+
+.spotlight-img-left {
+    max-width: 250px;
+    height:    auto;
+
+    margin: 0 1rem 1rem 0;
+    float: left;
+}
+
+/* Prevent Ordered lists slipping in to images. */
+ol {
+    display: inline-block;
+    li {
+
+    }
+}
+
+.spotlight-pagination {
+    margin-bottom: 4rem;
+}
+

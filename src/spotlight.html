@@ -1,0 +1,287 @@
+<!--
+
+Copyright 2020 Anthony Vick trading as Just A Guy Coding.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Anthony Vick of Just A Guy Coding">
+    <title>Spotlight</title>
+
+    <!-- SEO - Change this to the master URL for the website. -->
+    <link rel="canonical" href=" http://justaguycoding.com/free/templates/spotlight_html">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Raleway&family=Sanchez&display=swap" rel="stylesheet">
+
+    <!-- Lodash templating - optionally include css link tags for static templates; optimised have css inlined. -->
+    <% if (true == htmlWebpackPlugin.options.static) {
+        %><%= htmlWebpackPlugin.tags.headTags %><%
+    }%>
+</head>
+<body>
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand spotlight-header" href="#">Spotlight</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="search-text form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="search border-0 my-0" type="submit">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                      </svg>
+                </button>
+              </form>
+            </div>
+          </nav>
+
+        <div class="jumbotron feature-jumbotron p-4 p-md-5 text-white rounded bg-dark shadow-lg"
+            style="background-image: url(<%= require('./images/feature1.jpg') %>">
+            <div class="col-md-6 px-0">
+                <h1 class="display-4 font-italic">The Spotlight Template</h1>
+                <p class="lead my-3"><em>A simple, elegant HTML blog template built on Bootstrap 4.</em></p>
+                <p class="lead mb-0"><a href="#" data-content="Carry on reading..." class="text-white font-weight-bold ">Carry on reading...</a></p>
+            </div>
+        </div>
+
+        <div class="row mt-1 mb-4 no-gutters">
+
+            <div class="col-md-6">
+
+                <div class="card mb-0 h-100 shadow-lg" >
+                    <div class="row no-gutters">
+                        <div class="col-lg-4 d-lg-inline-flex justify-content-center" style="max-width:200px; max-height:200px; overflow:hidden">
+                            <img src="<%= require('./images/feature2.jpg') %>" class="d-none d-lg-inline-block card-img" alt="Bulbs Card Picture">
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="card-body pb-0">
+                                <strong class="d-inline-block mb-2 text-success">Javascript</strong>:
+                                <strong><span class="card-title text-dark">Dependencies</span></strong>
+                                <p class="card-text">Bootstrap's full default JQuery and Popper dependencies are included. These allow, amongst other things, for the menu's dropdown to work.
+                                    <a href="#" class="">Carry on reading...</a>
+                                </p>
+                                <p class="card-text text-right"><small class="text-muted">16 Sept</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card mb-0 h-100 shadow-lg">
+                    <div class="row no-gutters h-100">
+                        <div class="col-lg-4 d-lg-inline-flex justify-content-center" style="max-width:200px; max-height:200px; overflow:hidden">
+                            <img src="<%= require('./images/feature3.jpg') %>" class="d-none d-lg-inline-flex card-img" alt="Ambience Card Picture">
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="card-body pb-0">
+                                <strong class="d-inline-block mb-2 text-primary">Webpack</strong>:
+                                <strong><span class="card-title text-dark">Development Kit</span></strong>
+                                <p class="card-text">This template was built using JAGC's (optional) webpack development kit. Feel free to download and use it.  <a href="#" class="">Carry on reading...</a></p>
+                                <p class="card-text text-right"><small class="text-muted">12 Dec</small></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main role="main">
+            <div class="row">
+                <div class="col-md-8 blog-main">
+
+                    <div class="spotlight-post">
+                        <h2 class="spotlight-posttitle">Spot On!</h2>
+                        <p class="spotlight-postmeta">17 Sept 2020</p>
+
+                        <img src="<%= require('./images/blog1.jpg') %>"
+                            class="d-none d-lg-inline-block card-img spotlight-img-left shadow-sm" alt="Feature 4 image">
+
+                        <p>
+                            Spotlight is a HTML blog template is provided free of charge, released under the <a href="https://choosealicense.com/licenses/apache-2.0/">
+                            Apache 2.0 License<a>.
+                        </p>
+                        <p>
+                            The Montserrat and Raleway fonts have been paired to create an easily readable, light and modern, blog.
+                        </p>
+                        <p>
+                            The template displays a site-name "Spotlight", a navigation bar, and search input at the top; followed by a jumbotron feature post and two minor card posts; a list of older posts links is provided to the right hand-side.
+                        </p>
+                        <p>
+                            Being a Bootstrap based, the template is fully responsive and will resize to fit smaller screens;
+                            including the menu, which will collapse for mobile devices.
+                        </p>
+                        <p>
+                            This text is just some preamble to show you what a "read more" link would look like.
+                            <a class="font-weight-bold">Carry on reading...</a>
+                        </p>
+                    </div>
+
+                    <div class="spotlight-post">
+                        <h2 class="spotlight-posttitle">Lighten Up!</h2>
+                        <p class="spotlight-postmeta">10 Aug</p>
+
+                        <img src="<%= require('./images/blog2.jpg') %>"
+                            class="d-none d-lg-inline-block card-img spotlight-img-left shadow-sm" alt="Feature 4 image">
+
+                        <p>
+                            The HTML template comes packaged in two different forms:
+                        </p>
+                        <ol>
+                            <li>As a basic HTML Template</li>
+                            <li>As a Webpack Starter Kit</li>
+                        </ol>
+                        <p>The advantages of the Webpack Starter Kit is that it allows you to jump straight in and customise and optimise the template .</p>
+                        <p>
+                            For example, the HTML template is built on Bootstrap 4 and includes all it's default CSS and JavaScript dependencies,
+
+                            if you want
+                            to reduce Bootstrap's footprint you can download the Webpack Starter Kit and amend which the
+                             JavaScript and CSS dependencies used.
+                        </p>
+                        <p>
+                            The Webpack starter kit also supports inline CSS, CSS and JavaScript minification, and automated cache busting.
+                        </p>
+                    </div>
+
+                    <div class="spotlight-post">
+                        <h2 class="spotlight-posttitle">The Gift of Light!</h2>
+                        <p class="spotlight-postmeta">10 July</p>
+
+                        <img src="<%= require('./images/logo.png') %>"
+                            class="d-none d-lg-inline-block card-img spotlight-img-left" alt="Feature 4 image">
+                        <p>
+                            This template has been developed free of charge by Just A Guy Coding. If you would like help deploying
+                            or amending it please get it touch and ask for quote.
+                        </p>
+                        <p>
+                            If you'd like to say thanks and encourage the creation of more templates in the
+                            future then why not buy me a coffee using Paypal? at <a href="https://www.paypal.me/justaguycoding">https://www.paypal.me/justaguycoding</a>
+                        </p>
+                    </div>
+
+                    <div class="spotlight-post">
+                        <h2 class="spotlight-posttitle">Photo Credits</h2>
+                        <p class="spotlight-postmeta">1 July</p>
+
+                        <p> All photos sourced from Unsplash at <a href="https://unsplash.com/">https://unsplash.com/</a>.
+                            From top, left to bottom, right the list photographers is provided below.</p>
+                        <ul>
+
+                            <li>Main feature photo by <a href="https://unsplash.com/@jannerboy62?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nick Fewings</a></li>
+                            <li>Javascript feature photo  by <a href="https://unsplash.com/@rc820">Chirayu Trivedi</li>
+                            <li>Webpack feature photo by <a href="https://unsplash.com/@br_am?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Bram.</a></li>
+                            <li>Spot On photo by <a href="https://unsplash.com/@_masonsummers?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Mason Summers</a></li>
+                            <li>Lighten Up post photo by <a href="https://unsplash.com/@oscartothekeys?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Oscar Keys</a></li>
+                            <li>The Gift of Light post image by <a href="https://justaguycoding.com">Anthony Vick</a></li>
+                        </ul>
+                    </div>
+
+                    <nav class="spotlight-pagination">
+                        <a class="btn btn-outline-dark" href="#">Old Posts</a>
+                        <a class="btn btn-outline-dark disabled" href="#" >New Posts</a>
+                    </nav>
+                </div>
+
+                <aside class="col-md-4">
+                    <div class="p-4 p-sm-0 pb-sm-1 text-center text-md-left">
+                        <h4 class="font-italic">Older Posts</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#">It's all about the light</a></li>
+                            <li><a href="#">Lighting up</a></li>
+                            <li><a href="#">See the light</a></li>
+                            <li><a href="#">Feeling lighter?</a></li>
+                            <li><a href="#">Walk in to the light</a></li>
+                            <li><a href="#">Spot the lights</a></li>
+                            <li><a href="#">Lighter than air</a></li>
+                            <li><a href="#">Is it getting  dark?</a></li>
+                        </ol>
+                    </div>
+                </aside>
+            </div>
+        </main>
+
+        <footer class="spotlight-footer pt-4 my-md-5 pt-md-5 border-top">
+
+            <div class="row">
+                <div class="col-12 col-md text-center">
+                    <img class="mb-2" src="<%= require('./images/logo.png') %>" alt="" width="64" height="64">
+                    <small class="d-block mb-1 text-muted">Template by <a
+                            href="https://justaguycoding.com/">JustAGuyCoding</a>.</small>
+                    <small class="d-block mb-3 text-muted">© 2020</small>
+                </div>
+
+                <div class="col-6 col-md">
+
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Privacy Notice</a></li>
+                        <li><a class="text-muted" href="#">Cookies</a></li>
+                        <li><a class="text-muted" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md">
+
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#"></a></li>
+                        <li><a class="text-muted" href="#">Instagram</a></li>
+                        <li><a class="text-muted" href="#">Facebook</a></li>
+                        <li><a class="text-muted" href="#">Twitter</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md">
+                    <a href="#">Back to top</a>
+                </div>
+            </div>
+        </footer>
+
+        <%= htmlWebpackPlugin.tags.bodyTags %>
+    </body>
+</html>

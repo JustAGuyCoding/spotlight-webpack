@@ -1,0 +1,1 @@
+This template includes Bootstrap(https://getbootstrap.com) lisenced under the MIT software license (https://github.com/twbs/bootstrap/blob/main/LICENSE).
