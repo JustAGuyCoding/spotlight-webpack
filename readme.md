@@ -18,6 +18,8 @@ A simple, elegant HTML blog template built on Bootstrap 4. Released under the Ap
 
 Spotlight is a HTML blog template provided free of charge, released under the Apache 2.0 License.
 
+This is a Webpack Starter Kit used to create the HTML template. It can be used to create an optimised version of the template using `npm run build-optimise`, or as a starting point for developing your project using the Webpack tooling (such as the Webpack Development Server).
+
 ##### Demo
 
 View the template online at https://justaguycoding.com/free/templates/spotlight_html
