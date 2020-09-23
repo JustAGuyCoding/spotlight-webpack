@@ -2,8 +2,9 @@
 
 
 
-<center>Spotlight - HTML - Template
+<center>Spotlight - Webpack Starter Kit
 </br>By Just A Guy Coding</center>
+
 
 Spotlight
 
@@ -37,12 +38,20 @@ As a Bootstrap based, the template is fully responsive and will resize to fit sm
 
 ##### Installation
 
-After downloading the repository:
+###### Prerequisites
+
+- npm - npm is installed with node; see https://nodejs.org/en/.
+
+###### Getting the Code
+
+Fetch the repository using git:
 
 ```
 git clone https://github.com/JustAGuyCoding/spotlight.git
 npm init
 ```
+
+###### Building
 
 Then to build a static html template:
 
@@ -50,7 +59,7 @@ Then to build a static html template:
 npm run build-template
 ```
 
-Or to build an optimised template:
+or to build an optimised template:
 
 ```
 npm run build-optimise
@@ -58,9 +67,26 @@ npm run build-optimise
 
 The generated template will be copied to the `/dist` folder.
 
+##### Editing the HTML
+
+The HTML is stored inside `/stc/spotlight.html`. 
+
+If you're not familiar with Webpack then you should note that:
+
+- This is a lodash (https://lodash.com) template. It is imported by Webpack's htmlWebpackPlugin when it generates the code. 
+- Images are included using `<%= require('./images/feature1.jpg') %>`  lodash expression syntax. This enables Webpack to automatically process the images and copy them over to the `/dist` folder.
+- Webpack's htmlWebpackPlugin will automatically insert the CSS and JavaScript code in to the lodash template. See  `<%= htmlWebpackPlugin.tags.whatever%>` tags to find the insertion points.
+
 ##### Bootstrap Dependencies
 
-Bootstrap's full default jQuery and Popper dependencies are included. These allow, amongst other things, for the menu's dropdown to work. To reduce or reduce the overall dependency footprint consider using the associated Spotlight Webpack Starter Kit to rebuild the template with your preferred mix of dependencies.
+Bootstrap's full default jQuery and Popper dependencies are included. These allow, amongst other things, for the menu's dropdown to work. 
+
+To reduce or reduce the overall dependency footprint you can :
+
+- Edit CSS dependencies in `/src/sass/custom.scss`. Commenting out the styles you don't need. See https://getbootstrap.com/docs/4.5/getting-started/theming/ for more details.
+- Edit JavaScript dependencies under `/src/spotlight.js`. See https://getbootstrap.com/docs/4.5/getting-started/webpack/ for more details.
+
+When you've completed your edits regenerate the template by typing `npm run build-optimise` from the command line.
 
 ##### Roadmap
 
