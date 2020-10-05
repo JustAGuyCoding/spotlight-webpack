@@ -29,6 +29,9 @@ const MiniCssExtractPlugin   = require('mini-css-extract-plugin');
 module.exports = {
     mode: 'production',
     entry   : './src/spotlight.js',
+    devServer: {
+        contentBase: './dist',
+    },
     output  : {
         path        : path.resolve(__dirname, 'dist'),
         filename    : 'spotlight.js',
@@ -83,7 +86,8 @@ module.exports = {
             },
             {
                 test: /\.s[ac]ss$/i,
-                use: [
+                use:
+                [
                     {
                         loader: MiniCssExtractPlugin.loader,
                         options: {
@@ -91,7 +95,15 @@ module.exports = {
                         },
                     },
                     'css-loader',
-                    'sass-loader',
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sassOptions: {
+                                outputStyle:   'compressed',
+                                indentType:    'tab'
+                            }
+                        }
+                    }
                 ],
             },
         ],

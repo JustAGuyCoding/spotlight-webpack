@@ -51,7 +51,7 @@ module.exports = {
 
         new StyleExtHtmlWebpackPlugin({
             position: 'head-bottom',
-            minify: true
+            minify: true /*clean-css*/
         }),
 
         new CopyPlugin({

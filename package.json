@@ -1,6 +1,6 @@
 {
   "name": "html",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "private": true,
   "main": "./src/index.js",
@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-optimise": "webpack --verbose  --mode=production --env.production --config ./webpack_optimised.config.js",
     "build-template": "webpack --config ./webpack_static.config.js",
-    "start": "webpack-dev-server --open"
+    "develop": "webpack-dev-server --open --config ./webpack_static.config.js"
   },
   "keywords": [],
   "author": "",
