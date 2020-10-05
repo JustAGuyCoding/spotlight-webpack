@@ -71,7 +71,7 @@ The generated template will be copied to the `/dist` folder.
 
 ##### Editing the HTML
 
-The HTML is stored inside `/stc/spotlight.html`. 
+The HTML is stored inside `/src/spotlight.html`. 
 
 If you're not familiar with Webpack then you should note that:
 
