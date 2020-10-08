@@ -38,7 +38,7 @@ module.exports = {
         filename    : 'spotlight.js',
     },
 
-    devtool: 'inline-source-map',
+    // devtool: 'inline-source-map',
     devServer: {
         contentBase: './dist',
     },
