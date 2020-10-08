@@ -41,7 +41,7 @@ limitations under the License.
     <div class="container">
 
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand spotlight-header" href="#">Spotlight</a>
+            <a class="navbar-brand spotlight-header spotlight-text-hidden" href="#">Spotlight</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -81,12 +81,12 @@ limitations under the License.
             </div>
           </nav>
 
-        <div class="jumbotron feature-jumbotron p-4 p-md-5 text-white rounded bg-dark shadow-lg"
+        <div class="jumbotron feature-jumbotron p-4 p-md-5 text-white rounded bg-dark shadow-lg spotlight-image-hidden"
             style="background-image: url(<%= require('./images/feature1.jpg') %>)">
             <div class="col-md-6 px-0">
                 <h1 class="display-4 font-italic">The Spotlight Template</h1>
                 <p class="lead my-3"><em>A simple, elegant HTML blog template built on Bootstrap 4.</em></p>
-                <p class="lead mb-0"><a href="#" data-content="Carry on reading..." class="text-white font-weight-bold ">Carry on reading...</a></p>
+                <p class="lead mb-0"><a href="#" data-content="Read on..." class="text-white font-weight-bold ">Read on...</a></p>
             </div>
         </div>
 
@@ -95,19 +95,18 @@ limitations under the License.
             <div class="col-md-6">
 
                 <div class="card mb-0 h-100 shadow-lg" >
-                    <div class="row no-gutters">
-                        <div class="col-lg-4 d-lg-inline-flex justify-content-center" style="max-width:200px; max-height:200px; overflow:hidden">
-                            <img src="<%= require('./images/feature2.jpg') %>" class="d-none d-lg-inline-block card-img" alt="Bulbs Card Picture">
+                    <div class="row no-gutters h-100">
+                        <div class="col-lg-5 d-lg-inline-flex justify-content-center" style="max-width:400px; max-height:400px; overflow:hidden">
+                            <img src="<%= require('./images/feature2.jpg') %>" class="d-none d-lg-inline-block card-img spotlight-image-hidden" alt="JavaScript minor feature image">
                         </div>
-                        <div class="col-lg-8">
+                        <div class="col-lg-7">
                             <div class="card-body pb-0">
-                                <strong class="d-inline-block mb-2 text-success">Javascript</strong>:
+                                <strong class="d-inline-block mb-2 text-success">JavaScript</strong>:
                                 <strong><span class="card-title text-dark">Dependencies</span></strong>
-                                <p class="card-text">Bootstrap's full default JQuery and Popper dependencies are included. These allow, amongst other things, for the menu's dropdown to work.
-                                    <a href="#" class="">Carry on reading...</a>
+                                <p class="card-text">All of Bootstrap's dependencies are included. Grid, Navigation, Dropdown and Collapse are the only elements used. You may wish to optimise this.
+                                    <a href="#" class="">Read on...</a>
                                 </p>
                                 <p class="card-text text-right"><small class="text-muted">16 Sept</small></p>
-
                             </div>
                         </div>
                     </div>
@@ -117,14 +116,15 @@ limitations under the License.
             <div class="col-md-6">
                 <div class="card mb-0 h-100 shadow-lg">
                     <div class="row no-gutters h-100">
-                        <div class="col-lg-4 d-lg-inline-flex justify-content-center" style="max-width:200px; max-height:200px; overflow:hidden">
-                            <img src="<%= require('./images/feature3.jpg') %>" class="d-none d-lg-inline-flex card-img" alt="Ambience Card Picture">
+                        <div class="col-lg-5 d-lg-inline-flex justify-content-center" style="max-width:400px; max-height:400px; overflow:hidden">
+                            <img src="<%= require('./images/feature3.jpg') %>" class="d-none d-lg-inline-flex card-img spotlight-image-hidden" alt="Webpack minor feature image">
                         </div>
-                        <div class="col-lg-8">
+                        <div class="col-lg-7">
                             <div class="card-body pb-0">
                                 <strong class="d-inline-block mb-2 text-primary">Webpack</strong>:
                                 <strong><span class="card-title text-dark">Development Kit</span></strong>
-                                <p class="card-text">This template was built using JAGC's (optional) webpack development kit. Feel free to download and use it.  <a href="#" class="">Carry on reading...</a></p>
+                                <p class="card-text">This template was built using the Spotlight Webpack development kit(github.com/JustAGuyCoding/spotlight-webpack).
+                                    <a href="#" class="">Read on...</a></p>
                                 <p class="card-text text-right"><small class="text-muted">12 Dec</small></p>
 
                             </div>
@@ -139,38 +139,110 @@ limitations under the License.
                 <div class="col-md-8 blog-main">
 
                     <div class="spotlight-post">
-                        <h2 class="spotlight-posttitle">Spot On!</h2>
+                        <div class="spotlight-posttitle"><h2>Spot On!</h2>
+                            <div class="spotlight-post-social-links">
+                                <ul>
+                                    <li>
+                                        <a class="socialmedia-icon"
+                                            href="https://pinterest.com/pin/create/button/?url==http%3A%2F%2Fjustaguycoding.com%2Fjagc-blog%2Ffrontpage%2Fspotlight%2F&media=&description=Spotlight is here">
+                                            <span class="pinterest-icon"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="socialmedia-icon"
+                                            href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fjustaguycoding.com%2Fjagc-blog%2Ffrontpage%2Fspotlight%2F&title=Free%20Spotlight%20Template%20ate&summary=Free%20Spotlight%20Template%20by%20Just%20A%20Guy%20Coding%20is%20here%21&source=Spotlight">
+                                            <span class="linkedin-icon"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="socialmedia-icon" href="https://www.facebook.com/sharer.php">
+                                            <span class="facebook-icon"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="socialmedia-icon"
+                                            href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fjustaguycoding.com%2Fjagc-blog%2Ffrontpage%2Fspotlight%2F&text=Spotlight%20is%20here">
+                                            <span class="twitter-icon"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
                         <p class="spotlight-postmeta">17 Sept 2020</p>
 
+
                         <img src="<%= require('./images/blog1.jpg') %>"
-                            class="d-none d-lg-inline-block card-img spotlight-img-left shadow-sm" alt="Feature 4 image">
+                            class="d-none d-lg-inline-block card-img spotlight-img-left shadow-sm spotlight-image-hidden" alt="Spot On post image">
 
                         <p>
-                            Spotlight is a HTML blog template is provided free of charge, released under the <a href="https://choosealicense.com/licenses/apache-2.0/">
+                            Spotlight is a HTML blog template, released under the <a href="https://choosealicense.com/licenses/apache-2.0/">
                             Apache 2.0 License</a>.
                         </p>
                         <p>
-                            The Montserrat and Raleway fonts have been paired to create an easily readable, light and modern, blog.
+                            It uses Montserrat and Raleway fonts for an easily readable, light and modern, feel. The colour palette is simply dark-grey and white, with
+                            a little blue thrown in  for links.
                         </p>
                         <p>
-                            The template displays a site-name "Spotlight", a navigation bar, and search input at the top; followed by a jumbotron feature post and two minor card posts; a list of older posts links is provided to the right hand-side.
+                            The site-name "Spotlight" is displayed in the top-left; to the right is the navigation bar which collapses to a hamburger menu for smaller devices. A search input box is provided to the top right.
+                        <p>
+                        </p>
+                            The main feature is provided using a Jumbotron, displaying a banner image, accompanying Call to Action text and a link to the main content; two minor features are tucked underneath using Card Posts, showing small images and text for secondary Call to Action items
                         </p>
                         <p>
-                            Being a Bootstrap based, the template is fully responsive and will resize to fit smaller screens;
-                            including the menu, which will collapse for mobile devices.
+                            Being Bootstrap based, the template is fully responsive and will resize to fit smaller screens automatically.
                         </p>
                         <p>
-                            This text is just some preamble to show you what a "read more" link would look like.
-                            <a class="font-weight-bold">Carry on reading...</a>
+                            A list of links pointing to older posts and labels is provided on the right hand-side, with space for  other widgets and gadgets to be added below.
+
+                        </p>
+                        <p>
+                            Blog traversal is performed  using buttons at the bottom of the page, where there is also a
+                            footer providing space for additional link lists, branding and notifications.
+                        </p>
+
+                        <p>
+                            This text is just some preamble to show you how a "read more" link looks.
+                            <a class="font-weight-bold">Read on...</a>
                         </p>
                     </div>
 
                     <div class="spotlight-post">
-                        <h2 class="spotlight-posttitle">Lighten Up!</h2>
+                        <div class="spotlight-posttitle"><h2>Lighten Up!</h2>
+
+                            <div class="spotlight-post-social-links">
+                                <ul>
+                                    <li>
+                                        <a class="socialmedia-icon"
+                                            href="https://pinterest.com/pin/create/button/?url==http%3A%2F%2Fjustaguycoding.com%2Fjagc-blog%2Ffrontpage%2Fspotlight%2F&media=&description=Spotlight is here">
+                                            <span class="pinterest-icon"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="socialmedia-icon"
+                                            href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fjustaguycoding.com%2Fjagc-blog%2Ffrontpage%2Fspotlight%2F&title=Free%20Spotlight%20Template%20ate&summary=Free%20Spotlight%20Template%20by%20Just%20A%20Guy%20Coding%20is%20here%21&source=Spotlight">
+                                            <span class="linkedin-icon"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="socialmedia-icon" href="https://www.facebook.com/sharer.php">
+                                            <span class="facebook-icon"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="socialmedia-icon"
+                                            href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fjustaguycoding.com%2Fjagc-blog%2Ffrontpage%2Fspotlight%2F&text=Spotlight%20is%20here">
+                                            <span class="twitter-icon"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
                         <p class="spotlight-postmeta">10 Aug</p>
 
                         <img src="<%= require('./images/blog2.jpg') %>"
-                            class="d-none d-lg-inline-block card-img spotlight-img-left shadow-sm" alt="Feature 4 image">
+                            class="d-none d-lg-inline-block card-img spotlight-img-left shadow-sm spotlight-image-hidden" alt="Lighten Up! post image">
 
                         <p>
                             The HTML template comes packaged in two different forms:
@@ -179,50 +251,100 @@ limitations under the License.
                             <li>As a basic HTML Template</li>
                             <li>As a Webpack Starter Kit</li>
                         </ol>
-                        <p>The advantages of the Webpack Starter Kit is that it allows you to jump straight in and customise and optimise the template .</p>
-                        <p>
-                            For example, the HTML template is built on Bootstrap 4 and includes all it's default CSS and JavaScript dependencies,
+                        <p>The advantage of the Webpack Starter Kit is that it allows you to jump straight into a pre-grown development environment and customise the template.
 
-                            if you want
-                            to reduce Bootstrap's footprint you can download the Webpack Starter Kit and amend which the
-                             JavaScript and CSS dependencies used.
+                            It  supports inline CSS, CSS and JavaScript minification and automated cache busting.
                         </p>
                         <p>
-                            The Webpack starter kit also supports inline CSS, CSS and JavaScript minification, and automated cache busting.
+                            The Starter Kit may also be used to help reduce the template's  default Bootstrap CSS and JavaScript dependencies.
+                        <p>
+
                         </p>
                     </div>
 
                     <div class="spotlight-post">
-                        <h2 class="spotlight-posttitle">The Gift of Light!</h2>
+                        <div class="spotlight-posttitle"><h2>The Gift of Light!</h2>
+
+                            <div class="spotlight-post-social-links">
+                                <ul>
+                                    <li>
+                                        <a class="socialmedia-icon"
+                                            href="https://pinterest.com/pin/create/button/?url==http%3A%2F%2Fjustaguycoding.com%2Fjagc-blog%2Ffrontpage%2Fspotlight%2F&media=&description=Spotlight is here">
+                                            <span class="pinterest-icon"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="socialmedia-icon"
+                                            href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fjustaguycoding.com%2Fjagc-blog%2Ffrontpage%2Fspotlight%2F&title=Free%20Spotlight%20Template%20ate&summary=Free%20Spotlight%20Template%20by%20Just%20A%20Guy%20Coding%20is%20here%21&source=Spotlight">
+                                            <span class="linkedin-icon"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="socialmedia-icon" href="https://www.facebook.com/sharer.php">
+                                            <span class="facebook-icon"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="socialmedia-icon"
+                                            href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fjustaguycoding.com%2Fjagc-blog%2Ffrontpage%2Fspotlight%2F&text=Spotlight%20is%20here">
+                                            <span class="twitter-icon"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
                         <p class="spotlight-postmeta">10 July</p>
 
-                        <img src="<%= require('./images/logo.png') %>"
-                            class="d-none d-lg-inline-block card-img spotlight-img-left" alt="Feature 4 image">
+                        <img src="<%= require('./images/logo_spot.png') %>"
+                            class="d-none d-lg-inline-block card-img spotlight-img-left spotlight-image-hidden" alt="The Gift of Light! post image">
                         <p>
-                            This template has been developed free of charge by Just A Guy Coding. If you would like help deploying
-                            or amending it please get it touch and ask for quote.
+                            This template has been developed free of charge by Just A Guy Coding (<a href="https://justaguycoding.com">https://justaguycoding.com<a>). If you'd like help deploying
+                            or changing it get it touch and ask for quote.
                         </p>
                         <p>
-                            If you'd like to say thanks and encourage the creation of more templates in the
-                            future then why not buy me a coffee using Paypal? at <a href="https://www.paypal.me/justaguycoding">https://www.paypal.me/justaguycoding</a>
+                            If you'd like to say thanks, and encourage the creation of more templates in the
+                            future, then why not buy me a coffee? You can use PayPal on <a href="https://www.paypal.me/justaguycoding">https://www.paypal.me/justaguycoding</a>.
                         </p>
                     </div>
 
                     <div class="spotlight-post">
-                        <h2 class="spotlight-posttitle">Photo Credits</h2>
+                        <div class="spotlight-posttitle"><h2>Credits!</h2>
+
+                            <div class="spotlight-post-social-links">
+                                <ul>
+                                    <li>
+                                        <a class="socialmedia-icon"
+                                            href="https://pinterest.com/pin/create/button/?url==http%3A%2F%2Fjustaguycoding.com%2Fjagc-blog%2Ffrontpage%2Fspotlight%2F&media=&description=Spotlight is here">
+                                            <span class="pinterest-icon"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="socialmedia-icon"
+                                            href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fjustaguycoding.com%2Fjagc-blog%2Ffrontpage%2Fspotlight%2F&title=Free%20Spotlight%20Template%20ate&summary=Free%20Spotlight%20Template%20by%20Just%20A%20Guy%20Coding%20is%20here%21&source=Spotlight">
+                                            <span class="linkedin-icon"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="socialmedia-icon" href="https://www.facebook.com/sharer.php">
+                                            <span class="facebook-icon"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="socialmedia-icon"
+                                            href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fjustaguycoding.com%2Fjagc-blog%2Ffrontpage%2Fspotlight%2F&text=Spotlight%20is%20here">
+                                            <span class="twitter-icon"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
                         <p class="spotlight-postmeta">1 July</p>
 
-                        <p> All photos sourced from Unsplash at <a href="https://unsplash.com/">https://unsplash.com/</a>.
-                            From top, left to bottom, right the list photographers is provided below.</p>
-                        <ul>
+                        <p>The spotlight photo was sourced from Unsplash and was taken by <a href="https://unsplash.com/@jannerboy62?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nick Fewings</a>. Thanks Nick.</p>
+                        <p>The Gift of Light post image is home grown, drawn by <a href="https://justaguycoding.com">Anthony Vick</a>.<p>
 
-                            <li>Main feature photo by <a href="https://unsplash.com/@jannerboy62?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nick Fewings</a></li>
-                            <li>Javascript feature photo  by <a href="https://unsplash.com/@rc820">Chirayu Trivedi</a></li>
-                            <li>Webpack feature photo by <a href="https://unsplash.com/@br_am?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Bram.</a></li>
-                            <li>Spot On photo by <a href="https://unsplash.com/@_masonsummers?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Mason Summers</a></li>
-                            <li>Lighten Up post photo by <a href="https://unsplash.com/@oscartothekeys?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Oscar Keys</a></li>
-                            <li>The Gift of Light post image by <a href="https://justaguycoding.com">Anthony Vick</a></li>
-                        </ul>
                     </div>
 
                     <nav class="spotlight-pagination">
@@ -232,8 +354,8 @@ limitations under the License.
                 </div>
 
                 <aside class="col-md-4">
-                    <div class="p-4 p-sm-0 pb-sm-1 text-center text-md-left">
-                        <h4 class="font-italic">Older Posts</h4>
+                    <div class="p-4 p-sm-0 pb-sm-1 text-center text-md-right">
+                        <h4 class="font-italic">Blog Archive</h4>
                         <ul class="list-unstyled mb-0">
                             <li><a href="#">It's all about the light</a></li>
                             <li><a href="#">Lighting up</a></li>
@@ -242,9 +364,20 @@ limitations under the License.
                             <li><a href="#">Walk in to the light</a></li>
                             <li><a href="#">Spot the lights</a></li>
                             <li><a href="#">Lighter than air</a></li>
-                            <li><a href="#">Is it getting  dark?</a></li>
+                            <li><a href="#">Is it gettingdark?</a></li>
                         </ul>
                     </div>
+
+                    <div class="p-4 mt-3 p-sm-0 pb-sm-1 text-center text-md-right">
+                        <h4 class="font-italic">Categories</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#">Lighting</a></li>
+                            <li><a href="#">Brightness</a></li>
+                            <li><a href="#">Darkness</a></li>
+                            <li><a href="#">Lumens</a></li>
+                        </ul>
+                    </div>
+
                 </aside>
             </div>
         </main>
@@ -285,5 +418,7 @@ limitations under the License.
         </footer>
     </div>
     <%= htmlWebpackPlugin.tags.bodyTags %>
+
+
 </body>
 </html>

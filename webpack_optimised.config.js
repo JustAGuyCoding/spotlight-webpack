@@ -9,6 +9,7 @@ const { CleanWebpackPlugin }    = require('clean-webpack-plugin');
 const MiniCssExtractPlugin      = require('mini-css-extract-plugin');
 const StyleExtHtmlWebpackPlugin = require("style-ext-html-webpack-plugin");
 const CopyPlugin                = require('copy-webpack-plugin');
+const webpack                   = require('webpack');
 
 module.exports = {
 
@@ -18,13 +19,14 @@ module.exports = {
         filename    : 'spotlight.[contenthash].js',
     },
 
-    /* Development - webmode. */
-    // devtool: 'inline-source-map',
-    // devServer: {
-    //     contentBase: './dist',
-    // },
 
     plugins: [
+
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            dropdsown: "exports-loader?dropdown!bootstrap/js/dist/dropdown",
+        }),
 
         new CleanWebpackPlugin({
             dry     : false,

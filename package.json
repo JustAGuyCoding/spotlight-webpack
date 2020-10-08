@@ -18,6 +18,7 @@
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^6.1.0",
     "css-loader": "^4.3.0",
+    "exports-loader": "^1.1.0",
     "extract-loader": "^5.1.0",
     "file-loader": "^6.1.0",
     "html-critical-webpack-plugin": "^2.1.0",
@@ -38,6 +39,7 @@
   },
   "dependencies": {
     "bootstrap-icons": "^1.0.0",
+    "jQuery": "^1.7.4",
     "jquery": "^3.5.1",
     "lodash": "^4.17.20",
     "popper.js": "^1.16.1"

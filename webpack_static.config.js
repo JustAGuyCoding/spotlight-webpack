@@ -25,6 +25,7 @@ const HtmlWebpackPlugin      = require('html-webpack-plugin');
 const CopyPlugin             = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin   = require('mini-css-extract-plugin');
+const webpack                = require('webpack');
 
 module.exports = {
     mode: 'production',
@@ -37,7 +38,19 @@ module.exports = {
         filename    : 'spotlight.js',
     },
 
+    devtool: 'inline-source-map',
+    devServer: {
+        contentBase: './dist',
+    },
+
      plugins: [
+
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            dropdown: "exports-loader?dropdown!bootstrap/js/dist/dropdown",
+        }),
+
         new HtmlWebpackPlugin({
             title   : 'Spotlight',
             filename: 'index.html',
